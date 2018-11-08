@@ -1,7 +1,17 @@
 body {
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  picture {
+    width: 100%;
+    > img {
+      width: 100%;
+    }
+  }
 }
 
-input[type=text] {
-  
+.top-div-pic > img {
+  vertical-align: bottom;
 }

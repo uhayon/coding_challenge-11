@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Huddle landing page with alternating sections</title>
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:700" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./styles/index.min.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,14 +20,16 @@
 <body>
   <header>
     <img src="./images/logo.svg" alt="Hubble Logo">
-    <button type="button" name="tryItFreeHeader" class="button button-pink button-pill">Try It Free</button>
+    <button type="button" name="tryItFreeHeader" class="button button-pink-inverse button-pill">Try It Free</button>
   </header>
   <section class="overview">
     <div class="intro">
       <h1>Build The Community Your Fans Will Love</h1>
-      <p>Huddle re-imagines the way we build communities. You have a voice, but so does
-      your audience. Create connections with your users as you engage in genuine discussion.</p>
-      <button type="button" name="startFree" class="button button-pink button-pill">Get Started For Free</button>
+      <div class="intro-wrapper">
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does
+          your audience. Create connections with your users as you engage in genuine discussion.</p>
+          <button type="button" name="startFree" class="button button-pink button-pill button-large">Get Started For Free</button>
+      </div>
     </div>
     <img src="./images/screen-mockups.svg" alt="mockup">
     <div class="metrics">
@@ -42,6 +45,10 @@
       </div>
     </div>
   </section>
+  <picture class="top-div-pic">
+    <source media="(min-width: 1440px)" srcset="./images/bg-section-top-desktop-1.svg">
+    <img src="./images/bg-section-top-mobile-1.svg" alt="Divider">
+  </picture>
   <section class="illustration illustration-blue">
     <div class="description">
       <h2>Grow Together</h2>
@@ -50,6 +57,10 @@
     </div>
     <img src="./images/illustration-grow-together.svg" alt="Grow Together">
   </section>
+  <picture>
+    <source media="(min-width: 1440px)" srcset="./images/bg-section-bottom-desktop-1.svg">
+    <img src="./images/bg-section-bottom-mobile-1.svg" alt="Divider">
+  </picture>
   <section class="illustration illustration-white">
     <div class="description">
       <h2>Flowing Conversations</h2>
@@ -58,6 +69,10 @@
     </div>
     <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
   </section>
+  <picture class="top-div-pic">
+    <source media="(min-width: 1440px)" srcset="./images/bg-section-top-desktop-2.svg">
+    <img src="./images/bg-section-top-mobile-2.svg" alt="Divider">
+  </picture>
   <section class="illustration illustration-blue">
     <div class="description">
       <h2>Your Users</h2>
@@ -66,13 +81,19 @@
     </div>
     <img src="./images/illustration-your-users.svg" alt="Your Users">
   </section>
-  <section class="overview">
-    <div class="intro">
+  <picture>
+    <source media="(min-width: 1440px)" srcset="./images/bg-section-bottom-desktop-2.svg">
+    <img src="./images/bg-section-bottom-mobile-2.svg" alt="Divider">
+  </picture>
+  <section class="resume">
       <h1>Ready To Build Your Community?</h1>
-      <button type="button" name="startFree" class="button button-pink button-pill">Get Started For Free</button>
-    </div>
+      <button type="button" name="startFree" class="button button-pink button-pill button-large">Get Started For Free</button>
   </section>
   <footer>
+    <picture class="top-div-pic">
+      <source media="(min-width: 1440px)" srcset="./images/bg-footer-top-desktop.svg">
+      <img src="./images/bg-footer-top-mobile.svg" alt="Divider">
+    </picture>
     <div class="footer-content">
       <div class="huddle-info">
         <img src="./images/logo-white.svg" alt="Logo Footer">
@@ -95,6 +116,13 @@
         </div>
         <input type="text" name="newsletter" value="">
         <button type="button" name="subscribe" class="button button-pink">Subscribe</button>
+      </div>
+      <div class="social-feed">
+        <span>
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </span>
       </div>
     </div>
     <p class="attribution">

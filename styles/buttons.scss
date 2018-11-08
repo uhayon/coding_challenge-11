@@ -1,6 +1,8 @@
 .button {
+  font-family: 'Open Sans', sans-serif;
   border: 2px solid transparent;
-  padding: 5px 10px;
+  padding: 10px 30px;
+  font-weight: 700;
   cursor: pointer;
   &.button-pill {
     border-radius: 9999px;
@@ -14,9 +16,16 @@
       border-color: $pink-light;
     }
   }
+  &.button-large {
+    padding: 2em 5em;
+  }
   &.button-pink-inverse {
     background-color: #fff;
     border-color: $pink;
     color: $pink;
+    &:hover {
+      background-color: $pink;
+      color: #fff;
+    }
   }
 }
