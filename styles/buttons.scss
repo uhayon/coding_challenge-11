@@ -1,0 +1,22 @@
+.button {
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+  &.button-pill {
+    border-radius: 9999px;
+  }
+  &.button-pink {
+    background-color: $pink;
+    border-color: $pink;
+    color: #fff;
+    &:hover {
+      background-color: $pink-light;
+      border-color: $pink-light;
+    }
+  }
+  &.button-pink-inverse {
+    background-color: #fff;
+    border-color: $pink;
+    color: $pink;
+  }
+}
