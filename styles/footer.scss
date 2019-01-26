@@ -1,5 +1,8 @@
 footer {
-  width: 100vw; 
+  width: 100vw;
+  @media(min-width: $desktop-width) {
+    width: auto;
+  }
   .footer-content {
     background-color: $cyan-dark;
     color: #fff;
