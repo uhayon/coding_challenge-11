@@ -1,8 +1,12 @@
 footer {
   width: 100vw;
-  i.fa:hover {
-    color: #ff52bf;
-    cursor: pointer;
+  i.fa {
+    transition: transform 0.5s;
+    &:hover {
+      color: #ff52bf;
+      cursor: pointer;
+      transform: scale(1.2);
+    }
   }
   @media(min-width: $desktop-width) {
     width: auto;
